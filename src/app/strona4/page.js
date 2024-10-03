@@ -1,32 +1,26 @@
 "use client"
+
+
 import { useState } from "react"
-export default function Strona4 (){
+export default function Strona3 (){
 
-
-    const [BgColor , setBgColor ] = useState("bg-white")
-    const [Input, setInput ] = useState("")
-    
-    
-
-    
-
-function ChangeBgColor(){
-
-    setBgColor(Input)
-    
- }
+const [color, setColor] = useState("bg-white")
 
 
 
+function changecolor(){
+
+setColor(color === "bg-black" ? "bg-white" : "bg-black") ///if
+
+}
 
     return(
         
-        <div className= {`${BgColor}h-screen w-full text-yellow-400 flex items-center justify-center border-2 gap-5`}>
+        <div className= {`${color} h-screen w-full text-yellow-400 flex items-center justify-center border-2 gap-5`}>
         
-      <input onChange={(e)=> setInput(e.target.value)} className="text-yellow-400" type="text" placeholder="Wpisz klase coloru Tailwind"></input>
-      
-      <button onClick={ChangeBgColor}>Zmien kolor</button>
+        <h1>{}</h1>
 
+        <button onClick={changecolor}>Zmień color</button>
         </div>
         
         
@@ -34,4 +28,4 @@ function ChangeBgColor(){
 
 
     )
-}
+} 
