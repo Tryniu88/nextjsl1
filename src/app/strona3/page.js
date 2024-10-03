@@ -16,7 +16,7 @@ setColor(color === "bg-black" ? "bg-white" : "bg-black") ///if
 
     return(
         
-        <div className= {`${color} text-yellow-400 flex items-center justify-center border-2 gap-5`}>
+        <div className= {`${color} h-screen w-full text-yellow-400 flex items-center justify-center border-2 gap-5`}>
         
         <h1>{}</h1>
 
