@@ -6,7 +6,7 @@ var classnames = ""
 if(ok){
     classnames="border w-1/2 bg-green-700"
 }else{
-    classnames="border w-1/2"
+    classnames="border w-1/2 bg-red-600"
 }
 
 
