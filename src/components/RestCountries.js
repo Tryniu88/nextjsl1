@@ -8,7 +8,10 @@ return(
            width={200} 
            height={100} 
            alt={kraj}
-           />
+           className="w-[100px] , h-[100px]"  />
+           
+
+         
 
 <h1 className = "text-center">{kraj}</h1>
 
