@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 
 export default function Strona6r() {
 
-const [data, setData] = useState(null)    
+const [data, setData] = useState(null)   
+const [error, setError] = useEffect(false) 
 
 useEffect(()=>{
 
@@ -20,6 +21,7 @@ const getData = async () => {
     
     }catch(error){
     console.log(error)
+    setError(true)
     
     }
     finally{
