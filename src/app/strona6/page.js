@@ -1,11 +1,13 @@
 "use client";
 
+import RestCountries from "@/components/RestCountries";
 import { useState, useEffect } from "react";
 
 export default function Strona6r() {
 
 const [data, setData] = useState(null)   
-const [error, setError] = useEffect(false) 
+const [error, setError] = useState(false) 
+const[loading, setLoading]= useState(true)
 
 useEffect(()=>{
 
@@ -25,7 +27,8 @@ const getData = async () => {
     
     }
     finally{
-    
+    setLoading(false)
+
     }
 
 }
@@ -34,9 +37,19 @@ getData()
 },[])
 
     return(
-<div className="flex flex-col justify-center items-center h-screen gap-3">
+<div className="flex flex-wrap justify-center items-center h-screen gap-3">
 
-<h1>{data && data[0].name.common}</h1>
+
+<h1> {error && "Nie udało się pobrac danych."}</h1>
+
+<h1>{loading && "Trwa Ładowanie"}</h1>
+<RestCountries kraj = {data && data[0].name.common}/>
+
+{data &&data.map((kraj, idx) => 
+
+<RestCountries key={idx} kraj={kraj.name.common}/>
+
+)}
 
 </div>
 
