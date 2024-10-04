@@ -47,7 +47,7 @@ getData()
 
 {data &&data.map((kraj, idx) => 
 
-<RestCountries key={idx} kraj={kraj.name.common}/>
+<RestCountries key={idx} url={kraj.flags.png} kraj={kraj.name.common}/>
 
 )}
 
