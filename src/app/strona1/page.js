@@ -31,5 +31,5 @@ export default function Strona1() {
       {/* Wyświetlanie aktualnej wartości licznika */}
       <p className="flex justify-center border-2">{licznik}</p>
     </div>
-  )
+  )dsd
 }
