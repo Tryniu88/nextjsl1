@@ -13,6 +13,7 @@ return(
  <Link className ='text-green-400' href ="/strona3">Strona3</Link>
  <Link className='text-purple-400' href="/strona4">Strona4</Link>
  <Link className='text-pink-400' href="/strona5">Strona5</Link>
+ <Link className='text-blue-800' href="/strona6">Strona6</Link>
 </div>
 
 )
