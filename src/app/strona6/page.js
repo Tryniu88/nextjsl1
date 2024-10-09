@@ -43,11 +43,11 @@ getData()
 <h1> {error && "Nie udało się pobrac danych."}</h1>
 
 <h1>{loading && "Trwa Ładowanie"}</h1>
-<RestCountries kraj = {data && data[0].name.common}/>
 
-{data &&data.map((kraj, idx) => 
 
-<RestCountries key={idx} url={kraj.flags.png} kraj={kraj.name.common}/>
+{data && data.map((kraj, idx) => 
+
+<RestCountries key={idx} kraj={kraj}/>
 
 )}
 

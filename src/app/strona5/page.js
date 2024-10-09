@@ -18,7 +18,7 @@ export default function Strona4 (){
   return (
     <div className={"h-screen w-full text-yellow-400 flex items-center justify-center border-2 gap-5"}>   
       {/* Pole tekstowe, którego wartość jest powiązana z `Input`, a każda zmiana aktualizuje stan */}
-      <input type="text" value={Input} onChange={(e) => setInput(e.target.value)}></input>
+      <input className="text-black"  type="text" value={Input} onChange={(e) => setInput(e.target.value)}></input>
 
       {/* Przycisk, który po kliknięciu wywołuje funkcję `dodaj` */}
       <button onClick={dodaj}>Dodaj do listy</button>
