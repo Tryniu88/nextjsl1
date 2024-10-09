@@ -9,16 +9,8 @@ return(
            height={100} 
            alt={kraj}
            className="w-[100px] , h-[100px]"  />
-           
-
-         
 
 <h1 className = "text-center">{kraj.name.common}</h1>
 
 </div>
-
-
-
-
-
 )}
