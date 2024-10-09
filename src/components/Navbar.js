@@ -16,9 +16,4 @@ return(
  <Link className='text-blue-800' href="/strona6">Strona6</Link>
 </div>
 
-)
-
-   
-
-
-}
+)}
