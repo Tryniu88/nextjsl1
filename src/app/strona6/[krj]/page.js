@@ -56,7 +56,7 @@ getData()
     {error && <h1>Nie udało się pobrać danych.</h1>}
    
 
-
+c
 
 
 
