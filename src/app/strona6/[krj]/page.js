@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Image from 'next/image'
+import Neighbours from "@/components/Neighbours"
 
 
 export default function KrjInfo({params}){
@@ -68,14 +69,17 @@ alt={kraj.name.common}
 className="w-[100px], h-[100px] "
 />
 
-
 <h2>Informacje o kraju: {kraj.name.common}</h2>
 <h2>Stolica Państwa: {kraj.capital}</h2>
 <h2>Populacja: {kraj.population}</h2>
 
 </div>
 }
+
+<Neighbours borders={kraj.borders}/>
+
 </div>
+
 
 
     )

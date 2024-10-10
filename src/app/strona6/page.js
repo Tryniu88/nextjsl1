@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import RestCountries from "@/components/RestCountries";
 import { useState, useEffect } from "react";
+import Neighbours from "@/components/Neighbours";
 
 export default function Strona6r() {
 
