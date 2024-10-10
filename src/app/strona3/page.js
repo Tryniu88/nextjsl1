@@ -5,15 +5,15 @@ import { useState } from "react" // Importowanie hooka `useState` z React, aby z
 export default function Strona3() {
 
   // Definiowanie stanu `color`, który będzie kontrolował klasę tła (domyślnie ustawiony na `bg-white`)
-  const [color, setColor] = useState("bg-white")
+  const [color, setColor] = useState("bg-yellow-400")
 
   // Funkcja `changecolor`, która zmienia wartość `color` między `bg-black` a `bg-white`
   function changecolor() {
-    setColor(color === "bg-black" ? "bg-white" : "bg-black") // Zmienia kolor: jeśli obecny to czarny, ustawia biały, w przeciwnym razie ustawia czarny
+    setColor(color === "bg-yellow-400" ? "bg-orange-700" : "bg-yellow-400") // Zmienia kolor: jeśli obecny to czarny, ustawia biały, w przeciwnym razie ustawia czarny
   }
 
   return (
-    <div className={`${color} h-screen w-full text-yellow-400 flex items-center justify-center border-2 gap-5`}>
+    <div className={`${color} h-screen w-full text-black flex items-center justify-center gap-5`}>
       {/* Dynamicznie ustawione tło elementu div, w zależności od wartości `color` */}
       
       {/* Przycisk, który po kliknięciu wywołuje funkcję `changecolor`, zmieniając kolor tła */}
