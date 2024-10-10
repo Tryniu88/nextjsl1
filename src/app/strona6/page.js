@@ -3,7 +3,7 @@
 import Link from 'next/link'; // Importujemy komponent Link z Next.js do nawigacji między stronami
 import RestCountries from "@/components/RestCountries"; // Import komponentu RestCountries do wyświetlania informacji o kraju
 import { useState, useEffect } from "react"; // Importujemy hooki useState i useEffect z Reacta
-import Neighbours from "@/components/Neighbours"; // Importujemy komponent Neighbours (być może do użycia w innym miejscu)
+
 
 // Tworzymy komponent Strona6r
 export default function Strona6r() {
