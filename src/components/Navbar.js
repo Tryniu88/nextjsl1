@@ -4,7 +4,7 @@ export default function Navbar(){
 
 return(
 
-<div className="flex justify-center gap-4">
+<div className="flex justify-center gap-8 p-8 font-bold">
 <Link className='text-cyan-400'   href="/">Home</Link>
 <Link className='text-red-400' href="/strona1">Strona1</Link>
  <Link className='text-yellow-400' href="/strona2">Strona2</Link>

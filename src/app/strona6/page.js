@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import RestCountries from "@/components/RestCountries";
 import { useState, useEffect } from "react";
 
@@ -44,11 +45,14 @@ getData()
 
 <h1>{loading && "Trwa Ładowanie"}</h1>
 
-=======
+
 {data && data.map((kraj, idx) => 
 
-
+<Link key={idx} href={`/strona6/${kraj.cca2}`}>
 <RestCountries key={idx} kraj={kraj}/>
+</Link>
+
+
 
 )}
 
