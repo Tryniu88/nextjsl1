@@ -44,8 +44,9 @@ getData()
 
 <h1>{loading && "Trwa Ładowanie"}</h1>
 
+=======
+{data && data.map((kraj, idx) => 
 
-{data &&data.map((kraj, idx) => 
 
 <RestCountries key={idx} kraj={kraj}/>
 
