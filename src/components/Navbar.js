@@ -12,6 +12,8 @@ return(
  <Link className='text-purple-400' href="/strona4">Strona4</Link>
  <Link className='text-pink-400' href="/strona5">Strona5</Link>
  <Link className='text-blue-800' href="/strona6">Strona6</Link>
+ <Link className='text-black'  href="/card">Card</Link>
+ <Link className='text-yellow-400'  href="/strona7">Strona 7</Link>
 </div>
 
 )}
